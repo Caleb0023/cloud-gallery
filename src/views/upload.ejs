@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UPLOAD</title>
+    <%- include("partials/head") -%>
+</head>
+
+<body>
+<!-- <style>body{
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} </style> -->
+<style>
+    .card{
+        -webkit-box-shadow: -21px 29px 12px -7px rgba(0,0,0,0.31);
+-moz-box-shadow: -21px 29px 12px -7px rgba(0,0,0,0.31);
+box-shadow: -21px 29px 12px -7px rgba(0,0,0,0.31);
+} 
+</style>
+    <%- include("partials/navigation") %>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card animate__animated  animate__fadeIn"">
+                    <div class="card-header text-center">
+                        <h3>Upload an Image</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" name="image" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+                                        file</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="title" placeholder="Title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="description" placeholder="Description" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success btn-block">
+                                    Upload
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
