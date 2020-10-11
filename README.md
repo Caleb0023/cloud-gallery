@@ -1,2 +1,1 @@
-solo pon los datos de tu cuenta de cloudinary y hecha a andar la app 
-enter your cloudinary account details and test the app
+just write the data of the cloudinary configuration, install the packages and go to localhost3000 and test it
